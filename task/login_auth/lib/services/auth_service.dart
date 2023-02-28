@@ -34,7 +34,7 @@ class AuthService {
   Future<ApiResponse> register(RegisterRequestDTO registerRequestDTO) async {
     try {
       Response response = await _dio.post(
-        'https://example.com/register',
+        '${BASE_URL}auth/customer/register',
         data: registerRequestDTO.toJson(),
       );
 
