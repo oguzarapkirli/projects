@@ -16,15 +16,15 @@ class AuthRepository {
     return await _authService.login(loginRequestDTO);
   }
 
-  Future<RegisterResponseDTO> register(String email, String password,
-      String name, String surname, String phoneNumber, String birthDate) async {
+  Future<RegisterResponseDTO> register(
+      String email, String password, String name, String surname) async {
+    //Create dto object
     RegisterRequestDTO registerRequestDTO = RegisterRequestDTO(
-        email: email,
-        password: password,
-        name: name,
-        surname: surname,
-        phoneNumber: phoneNumber,
-        birthDate: birthDate);
+      email: email,
+      password: password,
+      name: name,
+      surname: surname,
+    );
 
     //Call service
     return await _authService.register(registerRequestDTO);

@@ -39,8 +39,8 @@ class RegisterController extends GetxController {
   String? validatePassword(String? value) {
     if (value!.isEmpty) {
       return 'Şifre alanı boş bırakılamaz';
-    } else if (value.length < 6) {
-      return 'Şifre alanı en az 6 karakter olmalıdır';
+    } else if (value.length < 8) {
+      return 'Şifre alanı en az 8 karakter olmalıdır';
     }
     return null;
   }
@@ -62,8 +62,8 @@ class RegisterController extends GetxController {
     var name = splitedName[0];
     var surname = splitedName[1];
 
-    final response = await _authRepository.register(emailController.text,
-        passwordController.text, name, surname, "05456467811", "1998-08-04");
+    final response = await _authRepository.register(
+        emailController.text, passwordController.text, name, surname);
 
     isLoading.value = false;
     if (response.statusCode == HttpStatus.created) {

@@ -23,6 +23,9 @@ final ThemeData appTheme = ThemeData.light().copyWith(
     hintStyle: const TextStyle(
       color: Color(0xFFFFFFFF),
     ),
+    errorStyle: const TextStyle(
+      color: Color(0xFFFFFFFF),
+    ),
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(30),
     ),
@@ -41,6 +44,13 @@ final ThemeData appTheme = ThemeData.light().copyWith(
       ),
     ),
     errorBorder: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(30),
+      borderSide: const BorderSide(
+        width: 2.5,
+        color: Color(0xFFFFFFFF),
+      ),
+    ),
+    focusedErrorBorder: OutlineInputBorder(
       borderRadius: BorderRadius.circular(30),
       borderSide: const BorderSide(
         width: 2.5,
