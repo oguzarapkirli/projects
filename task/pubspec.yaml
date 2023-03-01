@@ -39,13 +39,10 @@ dependencies:
   dio: ^5.0.1
   flutter_svg: ^2.0.2
   font_awesome_flutter: ^10.4.0
-  country_state_city_picker: ^1.2.8
   get: ^4.6.5
   shared_preferences: ^2.0.18
   dots_indicator: ^2.1.0
-  device_preview: ^1.1.0
   responsive_framework: ^0.2.0
-  csc_picker: ^0.2.7
 
 dev_dependencies:
   flutter_test:

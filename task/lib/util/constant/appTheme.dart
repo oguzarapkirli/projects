@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'appColors.dart';
+
 final ThemeData appTheme = ThemeData.light().copyWith(
   textTheme: GoogleFonts.poppinsTextTheme().apply(
     bodyColor: const Color(0xFFFFFFFF),
@@ -11,10 +13,10 @@ final ThemeData appTheme = ThemeData.light().copyWith(
     primary: Color(0xFFFFFFFF),
     secondary: Color(0xFFFFFFFF),
   ),
-  scaffoldBackgroundColor: const Color(0xFFFF3938),
+  scaffoldBackgroundColor: appRed,
   checkboxTheme: CheckboxThemeData(
     fillColor: MaterialStateProperty.all(const Color(0xFFFFFFFF)),
-    checkColor: MaterialStateProperty.all(const Color(0xFFFF3938)),
+    checkColor: MaterialStateProperty.all(appRed),
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(20),
     ),

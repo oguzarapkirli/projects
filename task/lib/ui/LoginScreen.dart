@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:test/ui/RegisterScreen.dart';
+import 'package:test/util/constant/appColors.dart';
 
 import '../controller/LoginController.dart';
 
@@ -99,7 +100,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: const Text(
                         'Giriş Yap',
                         style: TextStyle(
-                          color: Colors.red,
+                          color: appRed,
                         ),
                       ),
                     ),
@@ -127,7 +128,7 @@ class _LoginScreenState extends State<LoginScreen> {
             shape: const CircleBorder(),
             padding: const EdgeInsets.all(15),
             backgroundColor: Colors.white,
-            foregroundColor: Colors.red,
+            foregroundColor: appRed,
           ),
           child: const FaIcon(
             FontAwesomeIcons.google,
@@ -140,7 +141,7 @@ class _LoginScreenState extends State<LoginScreen> {
             shape: const CircleBorder(),
             padding: const EdgeInsets.all(15),
             backgroundColor: Colors.white,
-            foregroundColor: Colors.red,
+            foregroundColor: appRed,
           ),
           child: const FaIcon(
             FontAwesomeIcons.facebookF,

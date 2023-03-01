@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../controller/WelcomeController.dart';
+import '../util/constant/appColors.dart';
 import 'LoginScreen.dart';
 
 class WelcomeScreen extends StatefulWidget {
@@ -88,7 +89,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                               style: Theme.of(context)
                                   .textTheme
                                   .titleMedium
-                                  ?.copyWith(color: Colors.red),
+                                  ?.copyWith(color: appRed),
                             ),
                           ),
                     ElevatedButton(
@@ -112,7 +113,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                         style: Theme.of(context)
                             .textTheme
                             .titleMedium
-                            ?.copyWith(color: Colors.red),
+                            ?.copyWith(color: appRed),
                       ),
                     ),
                   ],

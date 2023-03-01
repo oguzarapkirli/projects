@@ -4,6 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:test/controller/RegisterController.dart';
 
+import '../util/constant/appColors.dart';
 import 'LoginScreen.dart';
 
 class RegisterScreen extends StatefulWidget {
@@ -120,6 +121,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     obscureText: !controller.isPasswordVisible.value,
                     decoration: InputDecoration(
                       hintText: 'Password',
+                      counterText: '',
                       suffixIcon: IconButton(
                         icon: true
                             ? const Icon(Icons.visibility)
@@ -138,7 +140,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       child: const Text(
                         'Kayıt ol',
                         style: TextStyle(
-                          color: Colors.red,
+                          color: appRed,
                         ),
                       ),
                     ),
@@ -155,7 +157,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           shape: const CircleBorder(),
                           padding: const EdgeInsets.all(15),
                           backgroundColor: Colors.white,
-                          foregroundColor: Colors.red,
+                          foregroundColor: appRed,
                         ),
                         child: const FaIcon(
                           FontAwesomeIcons.google,
@@ -168,7 +170,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           shape: const CircleBorder(),
                           padding: const EdgeInsets.all(15),
                           backgroundColor: Colors.white,
-                          foregroundColor: Colors.red,
+                          foregroundColor: appRed,
                         ),
                         child: const FaIcon(
                           FontAwesomeIcons.facebookF,
